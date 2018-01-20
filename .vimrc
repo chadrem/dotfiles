@@ -13,7 +13,7 @@ set number
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 set wildignore+=*.class,*/resolution-cache/*,*/$global/*,*/target/scala*
 set ruler
-set colorcolumn=80
+" set colorcolumn=80
 set cursorline
 set scrolloff=5
 set autoread
@@ -47,6 +47,7 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'pangloss/vim-javascript'
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'burnettk/vim-angular'
 call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -123,7 +124,7 @@ au FileType go nmap <leader>gb <Plug>(go-doc-browser)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_autoclose_preview_window_after_insertion = 1
-let g:ycm_server_python_interpreter = '/Users/chad/.pyenv/versions/2.7.13/bin/python'
+let g:ycm_server_python_interpreter = '/Users/chad.remesch/.pyenv/versions/2.7.14/bin/python'
 let g:ycm_confirm_extra_conf = 0
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -142,6 +143,7 @@ let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 let g:syntastic_c_checkers = ['oclint']
 let g:syntastic_cpp_checkers = ['oclint']
+let g:syntastic_javascript_checkers=['eslint']
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Nerdcommenter.
@@ -211,4 +213,3 @@ set scrolljump=8        " Scroll 8 lines at a time at bottom/top
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set exrc
 set secure
-
