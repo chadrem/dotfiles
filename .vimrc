@@ -124,7 +124,7 @@ au FileType go nmap <leader>gb <Plug>(go-doc-browser)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_autoclose_preview_window_after_insertion = 1
-let g:ycm_server_python_interpreter = '/Users/chad.remesch/.pyenv/versions/2.7.14/bin/python'
+let g:ycm_server_python_interpreter = '/Users/chad/.pyenv/versions/2.7.14/bin/python'
 let g:ycm_confirm_extra_conf = 0
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
