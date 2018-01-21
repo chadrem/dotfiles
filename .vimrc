@@ -48,6 +48,8 @@ Plug 'honza/vim-snippets'
 Plug 'pangloss/vim-javascript'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'burnettk/vim-angular'
+Plug 'Shougo/unite.vim'
+Plug 'Shougo/vimfiler.vim'
 call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -58,6 +60,7 @@ nnoremap <Leader>. :ls<CR>:b<Space>
 noremap <Leader>l :Autoformat<CR>
 noremap ; :
 noremap <leader>o :FZF<CR>
+noremap <leader>f :VimFilerExplorer -parent<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Fzf.
@@ -200,6 +203,12 @@ let g:delimitMate_expand_cr = 2
 " Gutentags.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:gutentags_ctags_tagfile = '.tags'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Vimfiler.
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" let g:vimfiler_as_default_explorer = 1
+" autocmd VimEnter VimFilerExplorer -parent
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Clipboard.
