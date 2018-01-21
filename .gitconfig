@@ -1,0 +1,15 @@
+[user]
+	name = Chad Remesch
+	email = chad@remesch.com
+[apply]
+	whitespace = nowarn
+[github]
+	user = chadrem
+[core]
+	editor = vim
+	excludesfile = /Users/chad/.gitignore_global
+	ignorecase = false
+[color]
+	ui = true
+[push]
+	default = simple
