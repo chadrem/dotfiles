@@ -5,9 +5,7 @@ set nocompatible
 filetype plugin indent on
 syntax on
 let mapleader = "\<Space>"
-set expandtab
-set tabstop=2
-set shiftwidth=2
+set tabstop=2 shiftwidth=2 expandtab
 set hlsearch
 set number
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
