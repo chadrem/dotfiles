@@ -4,4 +4,4 @@
 .idea
 *.iml
 .tags
-.vim
+.vimrc
