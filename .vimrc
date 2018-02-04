@@ -28,12 +28,13 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-fugitive'
 Plug 'Raimondi/delimitMate'
 Plug 'scrooloose/nerdcommenter'
-Plug 'Chiel92/vim-autoformat'
+" Plug 'Chiel92/vim-autoformat'
 Plug 'qpkorr/vim-bufkill'
 Plug 'easymotion/vim-easymotion'
 Plug 'vim-ruby/vim-ruby'
 Plug 'itchyny/lightline.vim'
-Plug 'vim-syntastic/syntastic'
+" Plug 'vim-syntastic/syntastic'
+Plug 'w0rp/ale'
 Plug 'slim-template/vim-slim'
 Plug 'fatih/vim-go'
 Plug 'Valloric/YouCompleteMe'
@@ -55,7 +56,7 @@ call plug#end()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap \ :bnext<CR>
 nnoremap <Leader>. :ls<CR>:b<Space>
-noremap <Leader>l :Autoformat<CR>
+noremap <Leader>l :ALEFix<CR>
 noremap ; :
 noremap <leader>o :FZF<CR>
 noremap <leader>f :VimFilerExplorer -parent<CR>
@@ -138,24 +139,35 @@ let g:UltiSnipsJumpBackwardTrigger = '<c-z>'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Syntastic.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
-let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
-let g:syntastic_c_checkers = ['oclint']
-let g:syntastic_cpp_checkers = ['oclint']
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_html_tidy_ignore_errors = [
-      \ " proprietary attribute " ,
-      \ "trimming empty \<",
-      \ "inserting implicit ",
-      \ "unescaped \&" ,
-      \ "lacks \"action",
-      \ "lacks value",
-      \ "lacks \"src",
-      \ "is not recognized!",
-      \ "discarding unexpected",
-      \ "replacing obsolete "]
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
+" let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
+" let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
+" let g:syntastic_c_checkers = ['oclint']
+" let g:syntastic_cpp_checkers = ['oclint']
+" let g:syntastic_javascript_checkers = ['eslint']
+" let g:syntastic_html_tidy_ignore_errors = [
+"   \ " proprietary attribute " ,
+"   \ "trimming empty \<",
+"   \ "inserting implicit ",
+"   \ "unescaped \&" ,
+"   \ "lacks \"action",
+"   \ "lacks value",
+"   \ "lacks \"src",
+"   \ "is not recognized!",
+"   \ "discarding unexpected",
+"   \ "replacing obsolete "]
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Ale.
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:ale_linters = {
+  \   'javascript': ['standard'],
+  \ }
+
+let g:ale_fixers = {
+  \   'javascript': ['standard'],
+  \ }
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Nerdcommenter.
