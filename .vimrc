@@ -11,11 +11,12 @@ set number
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 set wildignore+=*.class,*/resolution-cache/*,*/$global/*,*/target/scala*
 set ruler
-" set colorcolumn=80
+set colorcolumn=100
 set cursorline
 set scrolloff=5
 set autoread
 au CursorHold * checktime
+runtime macros/matchit.vim
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plug.
@@ -163,10 +164,12 @@ let g:UltiSnipsJumpBackwardTrigger = '<c-z>'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:ale_linters = {
   \   'javascript': ['standard'],
+  \   'html': ['tidy'],
   \ }
 
 let g:ale_fixers = {
   \   'javascript': ['standard'],
+  \   'html': ['tidy'],
   \ }
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
