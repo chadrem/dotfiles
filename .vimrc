@@ -15,6 +15,7 @@ set colorcolumn=100
 set cursorline
 set scrolloff=5
 set autoread
+set hidden
 au CursorHold * checktime
 runtime macros/matchit.vim
 
