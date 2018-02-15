@@ -166,11 +166,13 @@ let g:UltiSnipsJumpBackwardTrigger = '<c-z>'
 let g:ale_linters = {
   \   'javascript': ['standard'],
   \   'html': ['tidy'],
+  \   'bash': ['shellcheck'],
   \ }
 
 let g:ale_fixers = {
   \   'javascript': ['standard'],
   \   'html': ['tidy'],
+  \   'bash': ['shellcheck'],
   \ }
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

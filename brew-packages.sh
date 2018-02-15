@@ -44,7 +44,8 @@ brew install \
   ansible \
   phantomjs \
   nvm \
-  bash
+  bash \
+  shellcheck
 
 brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 
