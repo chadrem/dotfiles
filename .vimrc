@@ -57,6 +57,7 @@ call plug#end()
 " Mappings.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap \ :bnext<CR>
+nnoremap = :Buffers<CR>
 nnoremap <Leader>. :ls<CR>:b<Space>
 noremap <Leader>l :ALEFix<CR>
 noremap ; :
