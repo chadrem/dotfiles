@@ -1,11 +1,17 @@
 #
+# Bash history.
+#
+HISTFILESIZE=10000
+HISTCONTROL=ignoredups:erasedups
+shopt -s histappend
+
+#
 # Variables.
 #
 export DISPLAY=:0.0
 export EDITOR=/usr/local/bin/vim
 export MANPATH=/opt/local/man:$MANPATH:/usr/local/man
 export TERM="xterm-256color"
-HISTFILESIZE=10000
 
 #
 # Aliases.
