@@ -132,6 +132,11 @@ eval "$(fasd --init auto)"
 alias j='fasd_cd -d'
 
 #
+# Git.
+#
+source /usr/local/etc/bash_completion.d/git-completion.bash
+
+#
 # Local machine config.
 #
 source ~/.bash_profile.local
