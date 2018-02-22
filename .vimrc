@@ -168,12 +168,14 @@ let g:ale_linters = {
   \   'javascript': ['standard'],
   \   'html': ['tidy'],
   \   'bash': ['shellcheck'],
+  \   'ruby': ['rubocop'],
   \ }
 
 let g:ale_fixers = {
   \   'javascript': ['standard'],
   \   'html': ['tidy'],
   \   'bash': ['shellcheck'],
+  \   'ruby': ['rubocop'],
   \ }
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
