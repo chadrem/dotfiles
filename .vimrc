@@ -51,6 +51,7 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'burnettk/vim-angular'
 Plug 'Shougo/unite.vim'
 Plug 'Shougo/vimfiler.vim'
+Plug 'djoshea/vim-autoread'
 call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
