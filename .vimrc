@@ -30,12 +30,10 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-fugitive'
 Plug 'Raimondi/delimitMate'
 Plug 'scrooloose/nerdcommenter'
-" Plug 'Chiel92/vim-autoformat'
 Plug 'qpkorr/vim-bufkill'
 Plug 'easymotion/vim-easymotion'
 Plug 'vim-ruby/vim-ruby'
 Plug 'itchyny/lightline.vim'
-" Plug 'vim-syntastic/syntastic'
 Plug 'w0rp/ale'
 Plug 'slim-template/vim-slim'
 Plug 'fatih/vim-go'
@@ -60,6 +58,7 @@ call plug#end()
 nnoremap \ :bnext<CR>
 nnoremap = :Buffers<CR>
 nnoremap <Leader>. :ls<CR>:b<Space>
+nnoremap <Return> :noh<CR>
 noremap <Leader>l :ALEFix<CR>
 noremap ; :
 noremap <Leader>o :FZF<CR>
