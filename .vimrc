@@ -62,8 +62,8 @@ nnoremap = :Buffers<CR>
 nnoremap <Leader>. :ls<CR>:b<Space>
 noremap <Leader>l :ALEFix<CR>
 noremap ; :
-noremap <leader>o :FZF<CR>
-noremap <leader>f :VimFilerExplorer -parent<CR>
+noremap <Leader>o :FZF<CR>
+noremap <Leader>f :VimFilerExplorer -parent<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Fzf.
@@ -119,11 +119,11 @@ let g:vroom_use_spring = 1
 " Go.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:go_fmt_command = "goimports"
-au FileType go nmap <leader>r <Plug>(go-run)
-au FileType go nmap <leader>b <Plug>(go-build)
-au FileType go nmap <leader>t <Plug>(go-test)
-au FileType go nmap <leader>c <Plug>(go-coverage)
-au FileType go nmap <leader>gb <Plug>(go-doc-browser)
+au FileType go nmap <Leader>r <Plug>(go-run)
+au FileType go nmap <Leader>b <Plug>(go-build)
+au FileType go nmap <Leader>t <Plug>(go-test)
+au FileType go nmap <Leader>c <Plug>(go-coverage)
+au FileType go nmap <Leader>gb <Plug>(go-doc-browser)
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " YouCompleteMe.
