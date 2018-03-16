@@ -58,9 +58,9 @@ call plug#end()
 nnoremap \ :bnext<CR>
 nnoremap = :Buffers<CR>
 nnoremap <Leader>. :ls<CR>:b<Space>
-nnoremap <Return> :noh<CR>
+nnoremap <Return> :
 noremap <Leader>l :ALEFix<CR>
-noremap ; :
+" noremap ; :
 noremap <Leader>o :FZF<CR>
 noremap <Leader>f :VimFilerExplorer -parent<CR>
 
@@ -246,6 +246,24 @@ set nocursorline        " Don't paint cursor line
 set nocursorcolumn      " Don't paint cursor column
 set lazyredraw          " Wait to redraw
 set scrolljump=8        " Scroll 8 lines at a time at bottom/top
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Habbit breaking.
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Line numbers.
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set number relativenumber
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Local machine config.
