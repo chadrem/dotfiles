@@ -16,6 +16,9 @@ set cursorline
 set scrolloff=5
 set autoread
 set hidden
+set ttyfast
+set mouse=a
+set ttymouse=xterm2
 au CursorHold * checktime
 runtime macros/matchit.vim
 
@@ -89,20 +92,6 @@ if isdirectory($HOME . '/.vim-backup') == 0
   :silent !mkdir -p ~/.vim-backup >/dev/null 2>&1
 endif
 set backupdir=~/.vim-backup/
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" GUI / NO-GUI.
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-if has("gui_running")
-  set guifont=AnonymousPro:h14
-  set guioptions=egmrt
-  set guioptions-=r
-  set vb
-else
-  set ttyfast
-  set mouse=a
-  set ttymouse=xterm2
-endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Ruby.
