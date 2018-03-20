@@ -39,9 +39,7 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'itchyny/lightline.vim'
 Plug 'w0rp/ale'
 Plug 'slim-template/vim-slim'
-Plug 'fatih/vim-go'
 Plug 'Valloric/YouCompleteMe'
-Plug 'skalnik/vim-vroom'
 Plug 'tpope/vim-endwise'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
@@ -97,21 +95,6 @@ set backupdir=~/.vim-backup/
 " Ruby.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd BufNewFile,BufRead *.slim set ft=slim
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Vroom.
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:vroom_use_spring = 1
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Go.
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:go_fmt_command = "goimports"
-au FileType go nmap <Leader>r <Plug>(go-run)
-au FileType go nmap <Leader>b <Plug>(go-build)
-au FileType go nmap <Leader>t <Plug>(go-test)
-au FileType go nmap <Leader>c <Plug>(go-coverage)
-au FileType go nmap <Leader>gb <Plug>(go-doc-browser)
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " YouCompleteMe.
