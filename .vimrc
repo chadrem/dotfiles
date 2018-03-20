@@ -58,9 +58,9 @@ call plug#end()
 nnoremap \ :bnext<CR>
 nnoremap = :Buffers<CR>
 nnoremap <Leader>. :ls<CR>:b<Space>
-nnoremap <Return> :noh<CR>
+" nnoremap <CR> :noh<CR>
 noremap <Leader>l :ALEFix<CR>
-noremap ; :
+noremap <CR> :
 noremap <Leader>o :FZF<CR>
 noremap <Leader>f :VimFilerExplorer -parent<CR>
 
@@ -250,10 +250,10 @@ set scrolljump=8        " Scroll 8 lines at a time at bottom/top
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Habbit breaking.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-noremap <Up> <NOP>
-noremap <Down> <NOP>
-noremap <Left> <NOP>
-noremap <Right> <NOP>
+" noremap <Up> <NOP>
+" noremap <Down> <NOP>
+" noremap <Left> <NOP>
+" noremap <Right> <NOP>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Line numbers.
