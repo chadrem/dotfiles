@@ -7,7 +7,6 @@ syntax on
 let mapleader = "\<Space>"
 set tabstop=2 shiftwidth=2 expandtab
 set hlsearch
-set number
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 set wildignore+=*.class,*/resolution-cache/*,*/$global/*,*/target/scala*
 set ruler
