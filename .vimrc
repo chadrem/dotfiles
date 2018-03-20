@@ -140,28 +140,6 @@ let g:UltiSnipsJumpForwardTrigger = '<c-b>'
 let g:UltiSnipsJumpBackwardTrigger = '<c-z>'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Syntastic.
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" let g:syntastic_check_on_open = 1
-" let g:syntastic_check_on_wq = 0
-" let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
-" let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
-" let g:syntastic_c_checkers = ['oclint']
-" let g:syntastic_cpp_checkers = ['oclint']
-" let g:syntastic_javascript_checkers = ['eslint']
-" let g:syntastic_html_tidy_ignore_errors = [
-"   \ " proprietary attribute " ,
-"   \ "trimming empty \<",
-"   \ "inserting implicit ",
-"   \ "unescaped \&" ,
-"   \ "lacks \"action",
-"   \ "lacks value",
-"   \ "lacks \"src",
-"   \ "is not recognized!",
-"   \ "discarding unexpected",
-"   \ "replacing obsolete "]
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Ale.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:ale_linters = {
@@ -224,12 +202,6 @@ let g:delimitMate_expand_cr = 2
 let g:gutentags_ctags_tagfile = '.tags'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Vimfiler.
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" let g:vimfiler_as_default_explorer = 1
-" autocmd VimEnter VimFilerExplorer -parent
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Clipboard.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 vmap <Leader>y "+y
@@ -246,14 +218,6 @@ set nocursorline        " Don't paint cursor line
 set nocursorcolumn      " Don't paint cursor column
 set lazyredraw          " Wait to redraw
 set scrolljump=8        " Scroll 8 lines at a time at bottom/top
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Habbit breaking.
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" noremap <Up> <NOP>
-" noremap <Down> <NOP>
-" noremap <Left> <NOP>
-" noremap <Right> <NOP>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Line numbers.
