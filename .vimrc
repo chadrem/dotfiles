@@ -58,9 +58,9 @@ call plug#end()
 nnoremap \ :bnext<CR>
 nnoremap = :Buffers<CR>
 nnoremap <Leader>. :ls<CR>:b<Space>
-" nnoremap <CR> :noh<CR>
+nnoremap <CR> :noh<CR>
 noremap <Leader>l :ALEFix<CR>
-noremap <CR> :
+" noremap <CR> :
 noremap <Leader>o :FZF<CR>
 noremap <Leader>f :VimFilerExplorer -parent<CR>
 
