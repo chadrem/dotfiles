@@ -10,7 +10,7 @@ set hlsearch
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 set wildignore+=*.class,*/resolution-cache/*,*/$global/*,*/target/scala*
 set ruler
-set colorcolumn=100
+set colorcolumn=80
 set cursorline
 set scrolloff=5
 set autoread
