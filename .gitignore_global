@@ -3,6 +3,10 @@
 .byebug_history
 .idea
 *.iml
+tags
+tags.lock
+tags.temp
+tags.temp.tmp
 .tags
 .tags.lock
 .tags.temp
