@@ -143,6 +143,11 @@ alias j='fasd_cd -d'
 source /usr/local/etc/bash_completion.d/git-completion.bash
 
 #
+# Visual Studio Code.
+#
+export PATH=$PATH:"/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
+#
 # Local machine config.
 #
 source ~/.bash_profile.local
