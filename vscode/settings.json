@@ -1,0 +1,7 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.minimap.enabled": false,
+    "vim.easymotion": true,
+    "vim.leader": "<space>",
+    "editor.lineNumbers": "relative"
+}
