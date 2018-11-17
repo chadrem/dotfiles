@@ -12,6 +12,8 @@ export DISPLAY=:0.0
 export EDITOR=/usr/local/bin/vim
 export MANPATH=/opt/local/man:$MANPATH:/usr/local/man
 export TERM="xterm-256color"
+export LC_CTYPE=C
+export LANG=C
 
 #
 # Aliases.
@@ -23,7 +25,8 @@ alias cleardnscache="dscacheutil -flushcache"
 # Node.
 #
 export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
 #
@@ -151,3 +154,4 @@ export PATH=$PATH:"/Applications/Visual Studio Code.app/Contents/Resources/app/b
 # Local machine config.
 #
 source ~/.bash_profile.local
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

@@ -3,5 +3,7 @@
     "editor.minimap.enabled": false,
     "vim.easymotion": true,
     "vim.leader": "<space>",
-    "editor.lineNumbers": "relative"
+    "editor.lineNumbers": "relative",
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false
 }

@@ -18,6 +18,7 @@ set hidden
 set ttyfast
 set mouse=a
 set ttymouse=xterm2
+set encoding=utf-8
 au CursorHold * checktime
 runtime macros/matchit.vim
 
