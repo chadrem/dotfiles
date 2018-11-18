@@ -36,7 +36,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'qpkorr/vim-bufkill'
 Plug 'easymotion/vim-easymotion'
 Plug 'vim-ruby/vim-ruby'
-Plug 'itchyny/lightline.vim'
+" Plug 'itchyny/lightline.vim'
 Plug 'w0rp/ale'
 Plug 'slim-template/vim-slim'
 Plug 'Valloric/YouCompleteMe'
@@ -51,6 +51,9 @@ Plug 'burnettk/vim-angular'
 Plug 'Shougo/unite.vim'
 Plug 'Shougo/vimfiler.vim'
 Plug 'djoshea/vim-autoread'
+Plug 'tomasiser/vim-code-dark'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -80,8 +83,8 @@ command! -bang -nargs=* Rg
 " Theme.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set termguicolors
-colors flatcolor
-let g:lightline = { 'colorscheme': 'flatcolor' }
+colorscheme codedark
+let g:airline_theme = 'codedark'
 autocmd BufWritePre * :%s/\s\+$//e
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -199,12 +202,12 @@ set scrolljump=8        " Scroll 8 lines at a time at bottom/top
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Line numbers.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set number relativenumber
-augroup numbertoggle
-  autocmd!
-  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
-  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
-augroup END
+" set number relativenumber
+" augroup numbertoggle
+"   autocmd!
+"   autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+"   autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+" augroup END
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Local machine config.
