@@ -36,7 +36,6 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'qpkorr/vim-bufkill'
 Plug 'easymotion/vim-easymotion'
 Plug 'vim-ruby/vim-ruby'
-" Plug 'itchyny/lightline.vim'
 Plug 'w0rp/ale'
 Plug 'slim-template/vim-slim'
 Plug 'Valloric/YouCompleteMe'
@@ -65,8 +64,9 @@ nnoremap <Leader>. :ls<CR>:b<Space>
 nnoremap <CR> :noh<CR>
 noremap <Leader>l :ALEFix<CR>
 " noremap <CR> :
-noremap <Leader>o :FZF<CR>
+noremap <Leader>p :FZF<CR>
 noremap <Leader>f :VimFilerExplorer -parent<CR>
+vmap <Leader>y "+y
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Fzf.
@@ -180,16 +180,6 @@ let g:delimitMate_expand_cr = 2
 " Gutentags.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:gutentags_ctags_tagfile = '.tags'
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Clipboard.
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-vmap <Leader>y "+y
-vmap <Leader>d "+d
-nmap <Leader>p "+p
-nmap <Leader>P "+P
-vmap <Leader>p "+p
-vmap <Leader>P "+P
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Performance tweaks for terminal.
