@@ -16,9 +16,13 @@ set scrolloff=5
 set autoread
 set hidden
 set ttyfast
-set mouse=a
-set ttymouse=xterm2
 set encoding=utf-8
+if !has('nvim')
+  set mouse=a
+  set ttymouse=xterm2
+endif
+set signcolumn=yes
+set omnifunc=syntaxcomplete#Complete
 au CursorHold * checktime
 runtime macros/matchit.vim
 
@@ -26,7 +30,6 @@ runtime macros/matchit.vim
 " Plug.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.vim/plugged')
-Plug 'chadrem/FlatColor'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-rails'
@@ -38,18 +41,11 @@ Plug 'easymotion/vim-easymotion'
 Plug 'vim-ruby/vim-ruby'
 Plug 'w0rp/ale'
 Plug 'slim-template/vim-slim'
-Plug 'Valloric/YouCompleteMe'
 Plug 'tpope/vim-endwise'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
 Plug 'pangloss/vim-javascript'
-" Plug 'ludovicchabant/vim-gutentags'
 Plug 'burnettk/vim-angular'
-Plug 'Shougo/unite.vim'
-Plug 'Shougo/vimfiler.vim'
-Plug 'djoshea/vim-autoread'
 Plug 'tomasiser/vim-code-dark'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -103,21 +99,6 @@ set backupdir=~/.vim-backup/
 " Ruby.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd BufNewFile,BufRead *.slim set ft=slim
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" YouCompleteMe.
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:ycm_autoclose_preview_window_after_completion = 1
-let g:ycm_autoclose_preview_window_after_insertion = 1
-let g:ycm_server_python_interpreter = '/Users/chad/.pyenv/versions/2.7.14/bin/python'
-let g:ycm_confirm_extra_conf = 0
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Ultisnips.
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:UltiSnipsExpandTrigger = '<c-b>'
-let g:UltiSnipsJumpForwardTrigger = '<c-b>'
-let g:UltiSnipsJumpBackwardTrigger = '<c-z>'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Ale.
@@ -177,27 +158,12 @@ let g:delimitMate_expand_space = 1
 let g:delimitMate_expand_cr = 2
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Gutentags.
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:gutentags_ctags_tagfile = '.tags'
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Performance tweaks for terminal.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocursorline        " Don't paint cursor line
 set nocursorcolumn      " Don't paint cursor column
 set lazyredraw          " Wait to redraw
 set scrolljump=8        " Scroll 8 lines at a time at bottom/top
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Line numbers.
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" set number relativenumber
-" augroup numbertoggle
-"   autocmd!
-"   autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
-"   autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
-" augroup END
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Local machine config.
