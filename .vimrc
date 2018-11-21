@@ -23,6 +23,8 @@ if !has('nvim')
 endif
 set signcolumn=yes
 set omnifunc=syntaxcomplete#Complete
+set number relativenumber
+set nu rnu
 au CursorHold * checktime
 runtime macros/matchit.vim
 
