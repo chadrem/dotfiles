@@ -65,6 +65,7 @@ noremap <Leader>l :ALEFix<CR>
 noremap <Leader>o :FZF<CR>
 noremap <Leader>f :VimFilerExplorer -parent<CR>
 vmap <Leader>y "+y
+map <C-c> :BD<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Fzf.

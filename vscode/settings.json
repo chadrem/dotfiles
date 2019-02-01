@@ -8,5 +8,12 @@
     "telemetry.enableCrashReporter": false,
     "editor.formatOnSaveTimeout": 1500,
     "terminal.integrated.copyOnSelection": true,
-    "files.autoSave": "off"
+    "files.autoSave": "off",
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["\\"],
+            "after": ["gt<CR>"]
+        }
+    ]
 }
