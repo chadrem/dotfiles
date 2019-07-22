@@ -71,10 +71,7 @@ case $(id -u) in
 esac
 
 # Symbols.
-prompt_symbol="❯"
-prompt_clean_symbol="☀ "
-prompt_dirty_symbol="☂ "
-prompt_venv_symbol="☁ "
+prompt_symbol=">"
 
 function prompt_command() {
 	# Local or SSH session?
@@ -97,9 +94,9 @@ function prompt_command() {
 
 		# Format Git info.
 		if [ -n "$dirty" ]; then
-			git_prompt=" $RED$prompt_dirty_symbol$branch$NOCOLOR"
+			git_prompt=" $RED$branch$NOCOLOR"
 		else
-			git_prompt=" $GREEN$prompt_clean_symbol$branch$NOCOLOR"
+			git_prompt=" $GREEN$branch$NOCOLOR"
 		fi
 	fi
 
