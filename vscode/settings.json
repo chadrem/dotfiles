@@ -15,5 +15,6 @@
             "before": ["\\"],
             "after": ["gt<CR>"]
         }
-    ]
+    ],
+    "editor.tabSize": 2
 }
