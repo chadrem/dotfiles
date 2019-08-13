@@ -1,6 +1,6 @@
 #!/bin/bash
 
-brew install \
+ for p in \
   ack \
   autoconf \
   automake \
@@ -45,7 +45,11 @@ brew install \
   phantomjs \
   nvm \
   bash \
-  shellcheck
+  shellcheck \
+  git \
+; do
+  brew install $p
+done
 
 brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 
